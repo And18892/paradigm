@@ -1,0 +1,20 @@
+{
+  "name": "paradigmshift",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "author": "laba biennio2",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "rm -rf dist && parcel build ./*.html --public-url https://and18892.github.io/paradigm/",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel-bundler": "^1.12.4"
+  }
+}
